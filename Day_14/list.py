@@ -14,6 +14,7 @@ print(list2)
 list1[0]='Art'
 print(list1)
 
+#List Comprehension
 x = int(input())
 y = int(input())
 z = int(input())
@@ -26,3 +27,9 @@ result = [[i, j, k]
           if (i + j + k) != n]
 
 print(result)
+
+
+# Matrix Transpose
+matrix = [[1,2,3],[4,5,6]]
+transpose = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
+print(transpose)
