@@ -39,6 +39,7 @@ b=temp
 print(f"Swapped values: a={a}, b={b}")
 
 #4. Write a python program to generate a random number 
+import math
 import random
 print(f"Random number: {random.randint(1,100)}")
 
@@ -66,3 +67,39 @@ print(cal)
 
 #8. Write a python program to solve quadratic equation
 
+
+
+a = float(input("Enter coefficient a: "))
+b = float(input("Enter coefficient b: "))
+c = float(input("Enter coefficient c: "))
+
+discriminant = b**2 - 4*a*c
+
+if discriminant > 0:
+    root1 = (-b + math.sqrt(discriminant)) / (2*a)
+    root2 = (-b - math.sqrt(discriminant)) / (2*a)
+    print(f"The roots are {root1} and {root2}")
+elif discriminant == 0:
+    root = -b / (2*a)
+    print(f"The root is {root}")
+else:
+    print("The equation has no real roots")
+
+#9. Write a python program to swap two numbers without using a temparary variable
+a=float(input("Enter the values of the first number(a):"))
+b=float(input("Enter the vale of the second number(b):"))
+# Display the original values
+print(f"Original values: a={a}, b={b}")
+#Swap the values without using temparary variable
+a,b=b,a
+#Display the Swapped values
+print(f"Swapped values: a={a}, b={b}")
+
+# 10 Write a python program to check if a number is positive, negative or zero
+num=float(input("Enter a number: "))
+if num>0:
+    print(f"{num} is a positive number.")
+elif num<0:
+    print(f"{num} is a negative number.")
+else:
+    print(f"{num} is zero.")    
