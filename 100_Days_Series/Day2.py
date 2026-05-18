@@ -5,7 +5,7 @@ if num%2==0:
 else:
     print("The number is odd")
 
-# 2. Write a python prgram to check the leap year
+# 2. Write   python prgram to check the leap year
 year=int(input("Enter a year: "))
 
 #Divided by 100 means century year
